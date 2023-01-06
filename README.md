@@ -15,8 +15,11 @@ From there, I realized I needed to transform my date from long to wide form, so 
 The predictors, Area Harvested (ha) and Year, were meant to predict Yield (hg/ha)
 
 ### Training the Model, Assessing Accuracy
-After splitting the data into training and testing sets, I trained the model, plotted the predictions, and calculated $R^2$, which turned out to be pretty decent at 0.712.
+After splitting the data into training and testing sets, I trained the model, plotted the predictions, and calculated $R^2$, which turned out to be 0.712.
 
 Note: My initial plan was to do a hypothesis test to see prove a relationship, but since `scikit-learn` has no functions that would do it for me, I decided to opt for an $R^2$ score
 
 ![Comparison](plots/comparison.png)
+
+## Conclusions
+If I was to do this project again, I might spend more time choosing predictors. I'd calculate p values to check significance of existing predictors, and add different predictors, such as temperature and rainfall that might more directly impact lemon/lime production.
