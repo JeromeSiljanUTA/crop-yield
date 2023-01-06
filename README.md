@@ -1,7 +1,5 @@
 # Crop Yield
-This application uses multivariate linear regression to predict lemon/lime yield in the United States given year and area harvested in an effort to solidify some of the concepts I've learning in Chapter 3 of [ISLR](https://www.statlearning.com/). While the data is hard to follow and predict by eye, the model was able to reach an $R^2$ value of 0.71. 
-
-$R^2$
+This application uses multivariate linear regression to predict lemon/lime yield in the United States given year and area harvested in an effort to solidify some of the concepts I've learning in Chapter 3 of [ISLR](https://www.statlearning.com/). While the data is hard to follow and predict by eye, the model was able to reach an $ R^2 $ value of 0.71. 
 
 The data was taken from the [Food and Agricultural Organization of the United Nations](https://www.fao.org/faostat/en/#data/QCL)
 
@@ -19,6 +17,6 @@ The predictors, Area Harvested (ha) and Year, were meant to predict Yield (hg/ha
 ### Training the Model, Assessing Accuracy
 After splitting the data into training and testing sets, I trained the model, plotted the predictions, and calculated $R^2$, which turned out to be pretty decent at 0.712.
 
-Note: My initial plan was to do a hypothesis test to see prove a relationship, but since `scikit-learn` has no functions that would do it for me, I decided to opt for an $R^2 score$
+Note: My initial plan was to do a hypothesis test to see prove a relationship, but since `scikit-learn` has no functions that would do it for me, I decided to opt for an $R^2$ score
 
 ![Comparison](plots/comparison.png)
