@@ -1,5 +1,5 @@
 # Crop Yield
-This application uses multivariate linear regression to predict lemon/lime yield in the United States given year and area harvested in an effort to solidify some of the concepts I've learning in Chapter 3 of [ISLR](https://www.statlearning.com/). While the data is hard to follow and predict by eye, the model was able to reach an $ R^2 $ value of 0.71. 
+This application uses multivariate linear regression to predict lemon/lime yield in the United States given year and area harvested in an effort to solidify some of the concepts I've learning in Chapter 3 of [ISLR](https://www.statlearning.com/). While the data is hard to follow and predict by eye, the model was able to reach an $R^2$ value of 0.71. 
 
 The data was taken from the [Food and Agricultural Organization of the United Nations](https://www.fao.org/faostat/en/#data/QCL)
 
