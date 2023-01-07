@@ -29,7 +29,8 @@ df.drop(
 )
 
 # shows values over time in line plot
-# sns.lineplot(x="Year", y="Value", data=df, hue="Element")
+sns.lineplot(x="Year", y="Value", data=df, hue="Element")
+plt.show()
 
 # pivot values
 df_pivot = (
@@ -68,7 +69,8 @@ print(f"R squared score: {r2:.3f}")
 
 # show residual plot
 residual = y_hat - Y_test
-sns.scatterplot(x="Year", y=residual, data=X_test)
+sns.scatterplot(x=y_hat, y=residual)
 plt.title("Residual Plot")
-plt.ylabel("Yield (hg/ha)")
-plt.xlabel("Year")
+plt.ylabel("Residual (hg/ha)")
+plt.xlabel("Predicted Yield (hg/ha)")
+plt.show()
