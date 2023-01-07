@@ -17,9 +17,12 @@ The predictors, Area Harvested (ha) and Year, were meant to predict Yield (hg/ha
 ### Training the Model, Assessing Accuracy
 After splitting the data into training and testing sets, I trained the model, plotted the predictions, and calculated $R^2$, which turned out to be 0.712.
 
-Note: My initial plan was to do a hypothesis test to see prove a relationship, but since `scikit-learn` has no functions that would do it for me, I decided to opt for an $R^2$ score
+My initial plan was to do a hypothesis test to see prove a relationship, but since `scikit-learn` has no functions that would do it for me, I decided to opt for an $R^2$ score
 
 ![Comparison](plots/comparison.png)
+
+It's hard to tell with so few data points, but the residual plot shows no discernible pattern which indicates no significant problems with the linear model.
+![Residual Plot](plots/ResidualPlot.png)
 
 ## Conclusions
 If I was to do this project again, I might spend more time choosing predictors. I'd calculate p values to check significance of existing predictors, and add different predictors, such as temperature and rainfall that might more directly impact lemon/lime production.
