@@ -57,10 +57,18 @@ lin_model = LinearRegression()
 lin_model.fit(X_train, Y_train)
 
 # show prediction vs actual data
+y_hat = lin_model.predict(X_test)
 sns.lineplot(x="Year", y="Yield (hg/ha)", data=df_pivot)
-sns.lineplot(x="Year", y=lin_model.predict(X_test), data=X_test, color="orange")
+sns.lineplot(x="Year", y=y_hat, data=X_test, color="orange")
 plt.show()
 
 # calculate r2 score
-r2 = r2_score(Y_test, lin_model.predict(X_test))
+r2 = r2_score(Y_test, y_hat)
 print(f"R squared score: {r2:.3f}")
+
+# show residual plot
+residual = y_hat - Y_test
+sns.scatterplot(x="Year", y=residual, data=X_test)
+plt.title("Residual Plot")
+plt.ylabel("Yield (hg/ha)")
+plt.xlabel("Year")
